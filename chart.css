@@ -1,0 +1,28 @@
+
+
+body {
+    background: #eee;
+    margin: 0;
+    padding: 0;
+}
+
+.node {
+    stroke-width: 1.5px;
+}
+
+.link {
+    stroke: #666;
+    stroke-opacity: 0.1;
+}
+
+text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 45px;
+    font-weight: 700;
+    color: #000;
+    cursor: default;
+}
+
+a svg {
+    stroke: transparent;
+}
