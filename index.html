@@ -8,44 +8,96 @@
     <link rel="stylesheet" href="styles.css">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto', sans-serif;
             line-height: 1.6;
-            background-color: #f5f5f5;
+            background-color: #f0f4f8;
             color: #333;
             margin: 0;
             padding: 0;
         }
         header {
-            background: #007BFF;
+            background: linear-gradient(135deg, #007BFF, #00A9FF);
             color: white;
-            padding: 20px 0;
+            padding: 50px 0;
             text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         header h1 {
             margin: 0;
-            font-size: 2.5em;
+            font-size: 3em;
+        }
+        header p {
+            font-size: 1.2em;
+            margin-top: 10px;
         }
         .container {
-            max-width: 1000px;
-            margin: 20px auto;
+            max-width: 1200px;
+            margin: 30px auto;
             padding: 20px;
             background: white;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
         }
-        .services, .about, .contact {
-            margin-bottom: 20px;
+        .about, .services, .contact {
+            margin-bottom: 40px;
         }
-        .services h2, .about h2, .contact h2 {
+        .about h2, .services h2, .contact h2 {
             margin-top: 0;
+            color: #007BFF;
+            font-size: 2.2em;
+            border-bottom: 2px solid #007BFF;
+            padding-bottom: 10px;
+        }
+        .about p, .services p {
+            font-size: 1.1em;
+            color: #555;
+        }
+        .services h3 {
+            color: #0056b3;
+            font-size: 1.5em;
+            margin-top: 20px;
+        }
+        .services ul {
+            list-style: disc;
+            margin-left: 20px;
+            color: #333;
+        }
+        .services li {
+            margin: 10px 0;
         }
         .contact p {
+            font-size: 1.1em;
             margin: 5px 0;
+        }
+        .contact a {
+            color: #007BFF;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .contact a:hover {
+            color: #0056b3;
         }
         footer {
             background: #333;
             color: white;
             text-align: center;
-            padding: 10px 0;
+            padding: 20px 0;
+            margin-top: 30px;
+        }
+        @media (max-width: 768px) {
+            header {
+                padding: 30px 0;
+            }
+            header h1 {
+                font-size: 2.5em;
+            }
+            .about h2, .services h2, .contact h2 {
+                font-size: 1.8em;
+            }
+            .services h3 {
+                font-size: 1.3em;
+            }
         }
     </style>
 </head>
@@ -60,38 +112,37 @@
     <section class="about">
         <h2>About Me</h2>
         <p>
-        Leveraging a rich background in leading technological innovations around programmatic advertising, I offer a range of specialized services aimed at enhancing your company's digital advertising and data-driven decision-making capabilities. With extensive experience in managing large-scale engineering teams and developing advanced ad tech solutions, the services include:
-    </p>
+            Leveraging a rich background in leading technological innovations around programmatic advertising, I offer a range of specialized services aimed at enhancing your company's digital advertising and data-driven decision-making capabilities. With extensive experience in managing large-scale engineering teams and developing advanced ad tech solutions, the services include:
+        </p>
     </section>
-    
 
     <section class="services">
- <h2>Services</h2>
- <h3>1. Smart Bidding System Development</h3>
-    <ul>
-        <li>Design and implementation of advanced bidding algorithms to optimize ad placements in real-time.</li>
-        <li>Custom solutions capable of handling high QPS (Queries Per Second) to maximize revenue and engagement.</li>
-    </ul>
-    <h3>2. Programmatic Supply Integration</h3>
-    <ul>
-        <li>Seamless integration of new real-time bidding (RTB) supply partners to expand market reach.</li>
-        <li>Implementation of cutting-edge technologies to streamline supply chain management and ensure smooth operations.</li>
-    </ul>
-    <h3>3. Ad Experience Innovation</h3>
-    <ul>
-        <li>Development of new ad formats for native, display, and video channels, tailored to enhance user engagement and brand visibility.</li>
-        <li>Creation of dynamic and interactive ad experiences that align with current market trends and consumer behaviors.</li>
-    </ul>
-    <h3>4. Conversion Optimization Systems</h3>
-    <ul>
-        <li>State-of-the-art systems designed to boost conversion rates through personalized ad experiences and data-driven targeting.</li>
-        <li>Continuous A/B testing and optimization to ensure the highest performance and return on investment (ROI).</li>
-    </ul>
-    <h3>5. Pricing and Margin Optimization</h3>
-    <ul>
-        <li>Deployment of first-price auction strategies to optimize pricing and maximize profit margins.</li>
-        <li>Advanced analytics and machine learning models to predict market trends and adjust pricing strategies accordingly.</li>
-    </ul>
+        <h2>Services</h2>
+        <h3>1. Smart Bidding System Development</h3>
+        <ul>
+            <li>Design and implementation of advanced bidding algorithms to optimize ad placements in real-time.</li>
+            <li>Custom solutions capable of handling high QPS (Queries Per Second) to maximize revenue and engagement.</li>
+        </ul>
+        <h3>2. Programmatic Supply Integration</h3>
+        <ul>
+            <li>Seamless integration of new real-time bidding (RTB) supply partners to expand market reach.</li>
+            <li>Implementation of cutting-edge technologies to streamline supply chain management and ensure smooth operations.</li>
+        </ul>
+        <h3>3. Ad Experience Innovation</h3>
+        <ul>
+            <li>Development of new ad formats for native, display, and video channels, tailored to enhance user engagement and brand visibility.</li>
+            <li>Creation of dynamic and interactive ad experiences that align with current market trends and consumer behaviors.</li>
+        </ul>
+        <h3>4. Conversion Optimization Systems</h3>
+        <ul>
+            <li>State-of-the-art systems designed to boost conversion rates through personalized ad experiences and data-driven targeting.</li>
+            <li>Continuous A/B testing and optimization to ensure the highest performance and return on investment (ROI).</li>
+        </ul>
+        <h3>5. Pricing and Margin Optimization</h3>
+        <ul>
+            <li>Deployment of first-price auction strategies to optimize pricing and maximize profit margins.</li>
+            <li>Advanced analytics and machine learning models to predict market trends and adjust pricing strategies accordingly.</li>
+        </ul>
     </section>
 
     <section class="contact">
